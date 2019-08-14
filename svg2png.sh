@@ -3,5 +3,7 @@ IMAGE_HEIGHT=1024
 for SVGFILE in *.svg;
 do
   FILEBASE=${SVGFILE%.svg}
-  rsvg-convert -w $IMAGE_WIDTH -h $IMAGE_HEIGHT $SVGFILE -o ${FILEBASE}.png
+  PNG_FILENAME=${FILEBASE}.png
+  rsvg-convert -w $IMAGE_WIDTH -h $IMAGE_HEIGHT $SVGFILE -o ${PNG_FILENAME}
+  echo ${PNG_FILENAME}
 done
