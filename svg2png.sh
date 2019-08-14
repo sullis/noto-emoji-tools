@@ -1,0 +1,7 @@
+IMAGE_WIDTH=1024
+IMAGE_HEIGHT=1024
+for SVGFILE in *.svg;
+do
+  FILEBASE=${SVGFILE%.svg}
+  rsvg-convert -w $IMAGE_WIDTH -h $IMAGE_HEIGHT $SVGFILE -o ${FILEBASE}.png
+done
