@@ -1,0 +1,14 @@
+on: [push]
+
+name: Integration
+jobs:
+  chore:
+    name: Testing chores
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+
+    - name: install librsvg2-bin
+      run: sudo apt-get install librsvg2-bin
