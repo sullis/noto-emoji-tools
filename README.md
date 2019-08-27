@@ -10,5 +10,10 @@
 - [librsvg](https://en.wikipedia.org/wiki/Librsvg)
 - [Ubuntu package](https://packages.ubuntu.com/search?keywords=librsvg2-bin)
 
+# MacOS setup
+
+```
+brew install librsvg
+```
 
 
