@@ -10,3 +10,7 @@ jobs:
       uses: actions/checkout@master
     - name: install librsvg2-bin
       run: sudo apt-get install librsvg2-bin
+    - name: build.sh
+      run: ./build.sh
+    - name: count PNG files
+      run: find . -name *.png | wc -l
