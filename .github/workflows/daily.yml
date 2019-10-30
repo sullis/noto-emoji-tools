@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v1
     - name: install librsvg2-bin
       run: sudo apt-get install librsvg2-bin
     - name: build.sh
