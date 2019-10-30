@@ -1,6 +1,8 @@
-on: [push]
+on:
+  schedule:
+    - cron:  '0 12 * * *'
 
-name: Integration
+name: on-schedule
 jobs:
   build:
     name: build
