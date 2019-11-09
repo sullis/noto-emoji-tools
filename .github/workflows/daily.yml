@@ -16,3 +16,11 @@ jobs:
       run: ./build.sh
     - name: count PNG files
       run: find . -name *.png | wc -l
+    - name: count PNG files
+      run: find . -name *.png | wc -l
+    - name: Git Add
+      run:  git add docs
+    - name: Git Commit
+      run:  git commit -m "update"
+    - name: Git Push
+      run:  git push
