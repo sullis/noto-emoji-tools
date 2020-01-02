@@ -16,11 +16,9 @@ jobs:
       run: ./build.sh
     - name: count PNG files
       run: find . -name *.png | wc -l
-    - name: count PNG files
-      run: find . -name *.png | wc -l
-    - name: Git Add
-      run:  git add docs
-    - name: Git Commit
-      run:  git commit -m "update"
-    - name: Git Push
-      run:  git push
+    - name: Git commit
+      run: |
+        git config --global user.name "GitHub Actions"
+        git add docs
+        git commit -m "update" || echo "No changes to commit"
+        git push origin HEAD:master
