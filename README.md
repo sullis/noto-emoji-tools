@@ -13,8 +13,10 @@
 # MacOS setup
 
 ```
+
 brew update
 brew install librsvg
+
 ```
 
 
