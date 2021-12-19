@@ -18,5 +18,3 @@ brew update
 brew install librsvg
 
 ```
-
-
