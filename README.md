@@ -1,4 +1,3 @@
-
 # noto-emoji
 
 - [README](https://github.com/googlefonts/noto-emoji/blob/master/README.md)
